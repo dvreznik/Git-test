@@ -3,7 +3,6 @@ package com.dvreznik.g;
 import java.util.Date;
 
 import javafx.application.Application;
-import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -107,8 +106,6 @@ public class Dispatcher extends Application {
 		Scene scene = new Scene(vBox);
 		window.setScene(scene);
 		window.show();
-		
-
 	}
 
 }
