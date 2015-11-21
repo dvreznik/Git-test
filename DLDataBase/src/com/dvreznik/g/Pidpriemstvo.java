@@ -2,8 +2,6 @@ package com.dvreznik.g;
 
 import java.util.Date;
 
-import javax.xml.crypto.Data;
-
 public class Pidpriemstvo {
 	
 	private int id;
@@ -12,11 +10,26 @@ public class Pidpriemstvo {
 	private Date data;
 	private float fond;
 	private String ker_p;
-	private int kod_dil;
+	private int id_d;
 	private float rob_misc;
-	
+		
 	public Pidpriemstvo(){}
 	
+	
+	public Pidpriemstvo(int id, String name_p, String adressa_p, Date data, float fond, String ker_p, int id_d,
+			float rob_misc) {
+		super();
+		this.id = id;
+		this.name_p = name_p;
+		this.adressa_p = adressa_p;
+		this.data = data;
+		this.fond = fond;
+		this.ker_p = ker_p;
+		this.id_d = id_d;
+		this.rob_misc = rob_misc;
+	}
+
+
 	public int getId() {
 		return id;
 	}
@@ -53,11 +66,11 @@ public class Pidpriemstvo {
 	public void setKer_p(String ker_p) {
 		this.ker_p = ker_p;
 	}
-	public int getKod_dil() {
-		return kod_dil;
+	public int getId_d() {
+		return id_d;
 	}
-	public void setKod_dil(int kod_dil) {
-		this.kod_dil = kod_dil;
+	public void setId_d(int id_d) {
+		this.id_d = id_d;
 	}
 	public float getRob_misc() {
 		return rob_misc;
@@ -69,6 +82,6 @@ public class Pidpriemstvo {
 
 	@Override
 	public String toString() {
-		return id +"\t"+ name_p +"\t"+ adressa_p +"\t"+ data +"\t"+ fond +"\t"+ ker_p +"\t"+ kod_dil +"\t"+ rob_misc;
+		return id +"\t"+ name_p +"\t"+ adressa_p +"\t"+ data +"\t"+ fond +"\t"+ ker_p +"\t"+ id_d +"\t"+ rob_misc;
 	}
 }
